@@ -1,0 +1,63 @@
+.wrapper {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(58, 119, 250);
+    user-select: none;
+    color: cornsilk;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 3px;
+}
+
+#check1:checked ~ .container {
+    background-color: blueviolet;
+}
+
+#check1 {
+    display: none;
+}
+
+.menu-item {
+    display: block;
+    width:100px;
+    height:20px;
+    background-color:indianred;
+    color:ivory;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    margin-top:2px;
+    text-decoration: none;
+    user-select: none;
+}
+
+.menu1 {
+    display: none;
+}
+
+#check1:checked ~ .menu1 {
+    display: block;
+}
+
+#check2 {
+    display: none;
+}
+
+.menu2 {
+    display: none;
+}
+
+#check2:checked ~ .menu2 {
+    display: block;
+}
+
