@@ -1,0 +1,132 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.container{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width:100%;
+    height:90vh;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.buttons{
+    display: flex;
+    border-bottom: 3px solid #333;
+}
+
+.button1,
+.button2,
+.button3,
+.button4,
+.button5,
+.button6 {
+    display: block;
+    flex:1;
+    height: 40px;
+    background-color: #ddd;
+    font-weight: 500;
+    user-select: none;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+}
+
+#tab1,
+#tab2,
+#tab3,
+#tab4,
+#tab5,
+#tab6 {
+    display:none;
+}
+
+#tab1:checked ~ .buttons > .button1,
+#tab2:checked ~ .buttons > .button2,
+#tab3:checked ~ .buttons > .button3,
+#tab4:checked ~ .buttons > .button4,
+#tab5:checked ~ .buttons > .button5,
+#tab6:checked ~ .buttons > .button6 {
+    background-color:rgb(205, 124, 212);
+}
+
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6 {
+    width: 100%;
+    height: 80%;
+    padding: 20px 20px;
+    font-size: 13px;
+}
+
+.content1 {
+    background: no-repeat center url("img/학교상징1.png");
+    background-size: contain;
+}
+
+.content6 {
+    background: no-repeat center url("img/학교상징8_교가.png");
+    background-size: contain;
+}
+
+.symbol-title-box {
+    width:92%;
+    border-bottom: 2px solid #9e6ba1;
+    margin-bottom: 20px;
+}
+
+.symbol-title {
+    font-size: 17px;
+    background-color:  #9e6ba1 ;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.symbol-sub-title{
+    margin-left: 10px;
+    text-align: left;
+    font-size: 30px;
+    color: #743b77;
+    font-weight: bold;
+    
+}
+
+.symbol-content{
+    width:90%;
+    font-size: 16px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6 {
+    display:none;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#tab1:checked ~ .content1,
+#tab2:checked ~ .content2,
+#tab3:checked ~ .content3, 
+#tab4:checked ~ .content4,
+#tab5:checked ~ .content5,
+#tab6:checked ~ .content6 {
+    display:block;
+}
+
